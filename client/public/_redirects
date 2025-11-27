@@ -1,4 +1,5 @@
 # API proxy - redirect API calls to backend
+https://mindbloom-api.onrender.com
 /api/*  https://mindbloom-api.onrender.com/api/:splat  200
 
 # SPA fallback - semua routes lain ke index.html
