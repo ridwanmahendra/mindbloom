@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { Send, Loader2, AlertCircle, Sparkles, Menu, X } from 'lucide-react';
 import ChatHistory from './ChatHistory';
+import { API_ENDPOINTS } from '../config/api';
 import {
     saveChatSession,
     getChatSessions,
@@ -116,7 +117,7 @@ export default function ChatInterface() {
         setError(null);
 
         try {
-            const response = await fetch('/api/chat', {
+            const response = await fetch(API_ENDPOINTS.CHAT, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

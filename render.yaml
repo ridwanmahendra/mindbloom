@@ -15,3 +15,6 @@ services:
       - key: OPENAI_API_KEY
         sync: false  # Set this manually in Render dashboard
     healthCheckPath: /api/health
+
+# Note: Deploy frontend as Static Site manually via Render dashboard
+# Set environment variable: VITE_API_URL=https://mindbloom-api.onrender.com
