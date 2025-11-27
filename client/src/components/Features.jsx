@@ -10,7 +10,7 @@ const features = [
     {
         icon: Brain,
         title: 'AI yang Empatik',
-        description: 'Powered by Gemini AI yang dilatih untuk memahami dan memberikan dukungan emosional'
+        description: 'Powered by NeuroMind AI yang dilatih untuk memahami dan memberikan dukungan emosional'
     },
     {
         icon: Lock,

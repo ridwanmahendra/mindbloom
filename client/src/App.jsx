@@ -40,7 +40,7 @@ function App() {
 
             <footer className="footer">
                 <div className="container">
-                    <p>&copy; 2025 MindBloom. Platform konsultasi kesehatan mental berbasis AI.</p>
+                    <p>&copy; 2025 MindBloom. Platform konsultasi kesehatan mental berbasis AI. - Powered by Teknokrat NeuroMind - Universitas Teknokrat Indonesia </p>
                     <p className="footer-note">
                         Untuk kasus darurat atau pikiran bunuh diri, segera hubungi layanan kesehatan mental profesional.
                     </p>

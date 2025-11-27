@@ -8,7 +8,7 @@ export default function Hero({ onStartChat }) {
                 <div className="hero-content fade-in-up">
                     <div className="hero-badge">
                         <Sparkles size={16} />
-                        <span>Powered by OpenAI GPT</span>
+                        <span>Powered by Teknokrat NeuroMind </span>
                     </div>
 
                     <h1 className="hero-title">
