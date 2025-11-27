@@ -1,0 +1,290 @@
+.resources {
+    min-height: calc(100vh - 100px);
+}
+
+.resources-header {
+    text-align: center;
+    margin-bottom: var(--spacing-3xl);
+}
+
+.resources-title {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+.resources-subtitle {
+    color: var(--text-secondary);
+    font-size: 1.125rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Crisis Alert */
+.crisis-alert {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-2xl);
+    margin-bottom: var(--spacing-3xl);
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(239, 68, 68, 0.05) 100%);
+    border-left: 4px solid #ef4444;
+}
+
+.alert-icon {
+    color: #ef4444;
+    flex-shrink: 0;
+}
+
+.alert-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-primary);
+}
+
+.alert-content p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Section Blocks */
+.section-block {
+    margin-bottom: var(--spacing-3xl);
+}
+
+.block-title {
+    font-size: 1.75rem;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    color: var(--text-primary);
+}
+
+.block-title svg {
+    color: var(--primary-400);
+}
+
+.block-description {
+    color: var(--text-secondary);
+    font-size: 1.0625rem;
+    margin-bottom: var(--spacing-xl);
+    line-height: 1.6;
+}
+
+/* Hotlines Grid */
+.hotlines-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.hotline-card {
+    padding: var(--spacing-xl);
+}
+
+.hotline-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.hotline-icon {
+    color: var(--accent-400);
+    flex-shrink: 0;
+}
+
+.hotline-name {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.hotline-available {
+    font-size: 0.875rem;
+    color: var(--accent-400);
+}
+
+.hotline-number {
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+    color: var(--primary-400);
+    margin-bottom: var(--spacing-md);
+}
+
+.hotline-description {
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+/* Help Signs */
+.help-signs {
+    padding: var(--spacing-2xl);
+}
+
+.signs-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--spacing-xl) 0;
+}
+
+.signs-list li {
+    padding: var(--spacing-md) 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    color: var(--text-secondary);
+    display: flex;
+    gap: var(--spacing-md);
+    line-height: 1.6;
+}
+
+.signs-list li:last-child {
+    border-bottom: none;
+}
+
+.sign-bullet {
+    color: var(--primary-400);
+    font-size: 1.5rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.help-note {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+    background: rgba(160, 80, 240, 0.1);
+    border-radius: var(--radius-md);
+    border-left: 3px solid var(--primary-400);
+}
+
+.help-note svg {
+    color: var(--primary-400);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.help-note p {
+    margin: 0;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Articles Grid */
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.article-card {
+    padding: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    transition: all var(--transition-base);
+}
+
+.article-card:hover {
+    transform: translateY(-4px);
+}
+
+.article-icon {
+    width: 56px;
+    height: 56px;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: var(--spacing-lg);
+}
+
+.article-title {
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-primary);
+}
+
+.article-description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-lg);
+    flex: 1;
+}
+
+.read-more-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    color: var(--primary-400);
+    background: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    padding: 0;
+}
+
+.read-more-btn:hover {
+    gap: var(--spacing-sm);
+    color: var(--primary-300);
+}
+
+/* Self-Care Tips */
+.self-care-tips {
+    padding: var(--spacing-2xl);
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+.tip-item {
+    text-align: center;
+}
+
+.tip-item h4 {
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-primary);
+}
+
+.tip-item p {
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .hotlines-grid,
+    .articles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .crisis-alert {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tips-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+}
