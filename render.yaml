@@ -17,10 +17,8 @@ services:
     healthCheckPath: /api/health
 
   # Frontend Static Site
-  - type: web
+  - type: static
     name: mindbloom-client
-    runtime: static
-    plan: free
     buildCommand: cd client && npm install && npm run build
     staticPublishPath: ./client/dist
     pullRequestPreviewsEnabled: true
