@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     overflow: hidden;
+    z-index: 1;
 }
 
 .hero-content {
@@ -171,5 +172,49 @@
     .orb-3 {
         width: 250px;
         height: 250px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .hero {
+        padding: var(--spacing-xl) 0;
+    }
+
+    .hero-badge {
+        font-size: 0.8rem;
+        padding: var(--spacing-xs) var(--spacing-md);
+    }
+
+    .hero-title {
+        font-size: 2rem;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .hero-description {
+        font-size: 1rem;
+        margin-bottom: var(--spacing-xl);
+    }
+
+    .hero-cta {
+        gap: var(--spacing-sm);
+    }
+
+    .hero-features {
+        gap: var(--spacing-sm);
+        font-size: 0.85rem;
+    }
+
+    /* Hide orbs on small screens for performance */
+    .floating-orb {
+        opacity: 0.15;
+        filter: blur(30px);
+    }
+
+    .orb-1,
+    .orb-2,
+    .orb-3 {
+        width: 180px;
+        height: 180px;
     }
 }

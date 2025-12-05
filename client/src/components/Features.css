@@ -69,3 +69,40 @@
         gap: var(--spacing-lg);
     }
 }
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .features-header {
+        margin-bottom: var(--spacing-xl);
+    }
+
+    .features-title {
+        font-size: 1.75rem;
+    }
+
+    .features-subtitle {
+        font-size: 1rem;
+    }
+
+    .features-grid {
+        gap: var(--spacing-md);
+    }
+
+    .feature-card {
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+
+    .feature-icon {
+        width: 56px;
+        height: 56px;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .feature-title {
+        font-size: 1.125rem;
+    }
+
+    .feature-description {
+        font-size: 0.9rem;
+    }
+}

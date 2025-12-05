@@ -170,14 +170,15 @@
     height: 8px;
     border-radius: var(--radius-full);
     outline: none;
+    appearance: none;
     -webkit-appearance: none;
     cursor: pointer;
     margin-bottom: var(--spacing-sm);
 }
 
 .rating-slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
     appearance: none;
+    -webkit-appearance: none;
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -379,5 +380,118 @@
 
     .form-actions .btn {
         width: 100%;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .mood-tracker-header {
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .mood-title {
+        font-size: 1.5rem;
+        justify-content: center;
+    }
+
+    .mood-subtitle {
+        font-size: 1rem;
+    }
+
+    .mood-stats {
+        gap: var(--spacing-md);
+    }
+
+    .stat-card {
+        padding: var(--spacing-lg);
+    }
+
+    .stat-value {
+        font-size: 1.5rem;
+    }
+
+    /* Larger mood selector for touch */
+    .mood-selector {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-sm);
+    }
+
+    .mood-option {
+        padding: var(--spacing-md);
+        min-height: 90px;
+    }
+
+    .mood-emoji {
+        font-size: 2rem;
+    }
+
+    .mood-label {
+        font-size: 0.8rem;
+    }
+
+    /* Better notice layout */
+    .today-notice {
+        flex-direction: column;
+        text-align: center;
+        padding: var(--spacing-lg);
+    }
+
+    .notice-emoji {
+        font-size: 2.5rem;
+    }
+
+    .notice-content h3 {
+        font-size: 1.125rem;
+    }
+
+    .notice-content p {
+        font-size: 0.95rem;
+    }
+
+    /* Compact form */
+    .mood-form-container {
+        padding: var(--spacing-lg);
+    }
+
+    .mood-form-container h3 {
+        font-size: 1.25rem;
+    }
+
+    .form-group {
+        margin-bottom: var(--spacing-lg);
+    }
+
+    /* Larger slider thumb for touch */
+    .rating-slider::-webkit-slider-thumb {
+        width: 28px;
+        height: 28px;
+    }
+
+    .rating-slider::-moz-range-thumb {
+        width: 28px;
+        height: 28px;
+    }
+
+    /* Compact history entries */
+    .mood-entry {
+        padding: var(--spacing-md);
+    }
+
+    .entry-emoji {
+        font-size: 2rem;
+    }
+
+    .entry-mood-label {
+        font-size: 1rem;
+    }
+
+    .entry-rating {
+        font-size: 1.25rem;
+    }
+
+    .section-title,
+    .history-title {
+        font-size: 1.5rem;
+        justify-content: center;
     }
 }

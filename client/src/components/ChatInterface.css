@@ -1,5 +1,6 @@
 .chat-section {
     min-height: calc(100vh - 100px);
+    position: relative;
 }
 
 .chat-layout {
@@ -8,6 +9,7 @@
     height: 600px;
     border-radius: var(--radius-lg);
     overflow: hidden;
+    position: relative;
 }
 
 .chat-header {
@@ -312,8 +314,14 @@
 }
 
 @media (max-width: 768px) {
+    .chat-layout {
+        height: auto;
+        min-height: 500px;
+    }
+
     .chat-container {
-        height: calc(100vh - 200px);
+        height: calc(100vh - 250px);
+        min-height: 500px;
     }
 
     .message-content {
@@ -326,5 +334,104 @@
 
     .chip {
         width: 100%;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .chat-header {
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .chat-title {
+        font-size: 1.5rem;
+        gap: var(--spacing-sm);
+        justify-content: center;
+    }
+
+    .chat-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .chat-layout {
+        min-height: 450px;
+        border-radius: var(--radius-md);
+    }
+
+    .chat-container {
+        height: calc(100vh - 200px);
+        min-height: 450px;
+        border-radius: var(--radius-md);
+    }
+
+    .chat-messages {
+        padding: var(--spacing-md);
+        gap: var(--spacing-md);
+    }
+
+    .chat-empty {
+        padding: var(--spacing-lg);
+    }
+
+    .chat-empty h3 {
+        font-size: 1.25rem;
+    }
+
+    .chat-empty p {
+        font-size: 0.9rem;
+    }
+
+    /* Larger touch targets for messages */
+    .message-content {
+        max-width: 90%;
+    }
+
+    .message-text {
+        padding: var(--spacing-sm) var(--spacing-md);
+        font-size: 0.95rem;
+    }
+
+    .message-avatar {
+        width: 36px;
+        height: 36px;
+        font-size: 1.1rem;
+    }
+
+    /* Larger input for easier typing */
+    .chat-input-form {
+        padding: var(--spacing-md);
+        gap: var(--spacing-sm);
+    }
+
+    .chat-input {
+        padding: var(--spacing-sm) var(--spacing-md);
+        font-size: 0.95rem;
+        min-height: 44px;
+    }
+
+    .chat-submit {
+        width: 44px;
+        height: 44px;
+        min-width: 44px;
+    }
+
+    /* Stack chips vertically */
+    .suggestion-chips {
+        gap: var(--spacing-xs);
+    }
+
+    .chip {
+        padding: var(--spacing-sm) var(--spacing-md);
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Compact error message */
+    .chat-error {
+        margin: 0 var(--spacing-md);
+        padding: var(--spacing-sm) var(--spacing-md);
+        font-size: 0.85rem;
     }
 }

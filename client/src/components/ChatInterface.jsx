@@ -22,7 +22,7 @@ export default function ChatInterface() {
     const [error, setError] = useState(null);
     const [currentSessionId, setCurrentSession] = useState(null);
     const [sessions, setSessions] = useState([]);
-    const [showHistory, setShowHistory] = useState(true);
+    const [showHistory, setShowHistory] = useState(window.innerWidth > 768);
     const messagesEndRef = useRef(null);
 
     // Load sessions and current session on mount

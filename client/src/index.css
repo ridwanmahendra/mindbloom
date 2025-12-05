@@ -78,6 +78,8 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    position: relative;
 }
 
 h1,
@@ -142,10 +144,12 @@ h6 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 var(--spacing-lg);
+    overflow-x: hidden;
 }
 
 .section {
     padding: var(--spacing-3xl) 0;
+    position: relative;
 }
 
 /* ==========================================
@@ -362,5 +366,51 @@ h6 {
 
     .container {
         padding: 0 var(--spacing-md);
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    :root {
+        --spacing-xl: 1.5rem;
+        --spacing-2xl: 1.75rem;
+        --spacing-3xl: 2rem;
+    }
+
+    .section {
+        padding: var(--spacing-xl) 0;
+    }
+
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+
+    /* Larger touch targets for mobile */
+    .btn {
+        padding: var(--spacing-md) var(--spacing-lg);
+        min-height: 44px;
+        font-size: 0.95rem;
+    }
+
+    /* Better readability */
+    body {
+        font-size: 0.95rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    /* Glass cards with less padding */
+    .glass-card {
+        padding: var(--spacing-lg);
     }
 }

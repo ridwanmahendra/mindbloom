@@ -284,7 +284,98 @@
 }
 
 @media (max-width: 480px) {
+    .resources-header {
+        margin-bottom: var(--spacing-xl);
+    }
+
+    .resources-title {
+        font-size: 1.5rem;
+    }
+
+    .resources-subtitle {
+        font-size: 1rem;
+    }
+
+    /* Compact crisis alert */
+    .crisis-alert {
+        padding: var(--spacing-lg);
+        margin-bottom: var(--spacing-xl);
+    }
+
+    .alert-content h2 {
+        font-size: 1.25rem;
+    }
+
+    .alert-content p {
+        font-size: 0.95rem;
+    }
+
+    /* Larger hotline cards */
+    .hotline-card {
+        padding: var(--spacing-lg);
+    }
+
+    .hotline-name {
+        font-size: 1rem;
+    }
+
+    .hotline-number {
+        font-size: 1.125rem;
+    }
+
+    .hotline-description {
+        font-size: 0.9rem;
+    }
+
+    /* Better article cards */
+    .article-card {
+        padding: var(--spacing-lg);
+    }
+
+    .article-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .article-title {
+        font-size: 1rem;
+    }
+
+    .article-description {
+        font-size: 0.9rem;
+    }
+
+    /* Single column tips */
     .tips-grid {
         grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .self-care-tips {
+        padding: var(--spacing-lg);
+    }
+
+    .block-title {
+        font-size: 1.5rem;
+        justify-content: center;
+    }
+
+    .block-description {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /* Better help signs */
+    .help-signs {
+        padding: var(--spacing-lg);
+    }
+
+    .signs-list li {
+        font-size: 0.95rem;
+    }
+
+    .help-note {
+        padding: var(--spacing-md);
+        font-size: 0.9rem;
     }
 }
